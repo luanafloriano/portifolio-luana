@@ -6,10 +6,10 @@
   <meta name="description" content="Luana Cruz — Desenvolvedora Full Stack. Portfólio profissional." />
   <title>Luana Cruz · Full Stack Developer</title>
 
-  <!-- Google Fonts: Syne (display) -->
+  <!-- Google Fonts: Nunito (display) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -26,7 +26,7 @@
 
       <ul class="nav-links" id="navLinks">
         <li><a href="#sobre" class="nav-link">Sobre</a></li>
-        <li><a href="#stacks" class="nav-link">Stacks</a></li>
+        <li><a href="#planos" class="nav-link">Planos</a></li>
         <li><a href="#projetos" class="nav-link">Projetos</a></li>
         <li><a href="#contato" class="nav-link">Contato</a></li>
       </ul>
@@ -108,7 +108,7 @@
           <!-- Avatar -->
           <div class="sobre-avatar-wrap">
             <div class="sobre-avatar">
-              <span class="avatar-initials">LC</span>
+              <img src="foto.jpg" alt="Luana Cruz" class="avatar-photo" />
               <div class="avatar-ring"></div>
               <div class="avatar-glow"></div>
             </div>
@@ -128,22 +128,6 @@
               simples possível — sem abrir mão da qualidade.
             </p>
 
-            <div class="stats-grid">
-              <div class="stat-card">
-                <span class="stat-number accent">3<span class="stat-plus">+</span></span>
-                <span class="stat-label">Anos de experiência</span>
-                <!-- SUBSTITUIR: anos reais -->
-              </div>
-              <div class="stat-card">
-                <span class="stat-number accent">20<span class="stat-plus">+</span></span>
-                <span class="stat-label">Projetos entregues</span>
-                <!-- SUBSTITUIR: número real -->
-              </div>
-              <div class="stat-card">
-                <span class="stat-number accent">∞</span>
-                <span class="stat-label">Café consumido</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -152,193 +136,80 @@
     <!-- ===================== STACKS ===================== -->
     <section id="stacks" class="section-stacks reveal">
       <div class="container">
-        <h2 class="section-title">Minhas <span class="accent">Stacks</span></h2>
-        <p class="section-sub">Tecnologias que uso no dia a dia</p>
-
-        <!-- Frontend -->
-        <div class="stack-category">
-          <h3 class="category-label">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="16 18 22 12 16 6"/>
-              <polyline points="8 6 2 12 8 18"/>
-            </svg>
-            Frontend
-          </h3>
-          <div class="stack-grid">
-            <div class="stack-card">
-              <!-- React SVG -->
-              <svg class="stack-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="2.05" fill="currentColor"/>
-                <ellipse cx="12" cy="12" rx="10" ry="4.2" stroke="currentColor" stroke-width="1.4" fill="none"/>
-                <ellipse cx="12" cy="12" rx="10" ry="4.2" stroke="currentColor" stroke-width="1.4" fill="none" transform="rotate(60 12 12)"/>
-                <ellipse cx="12" cy="12" rx="10" ry="4.2" stroke="currentColor" stroke-width="1.4" fill="none" transform="rotate(120 12 12)"/>
-              </svg>
-              <span>React</span>
-            </div>
-            <div class="stack-card">
-              <!-- Next.js SVG -->
-              <svg class="stack-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1.5 14.5V7.5l7 9H14v-4l-3.5-4.5v8.5H10.5z"/>
-              </svg>
-              <span>Next.js</span>
-            </div>
-            <div class="stack-card">
-              <!-- TypeScript SVG -->
-              <svg class="stack-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <rect x="2" y="2" width="20" height="20" rx="3" fill="currentColor" opacity="0.15"/>
-                <path d="M13.5 12h-2v5.5h-1.5V12H8V10.5h5.5V12zM19 14c0-1.1-.9-2-2-2h-1v-1.5h3V9h-4.5v5h2.5v1.5H14V17h2.5c.8 0 2.5-.3 2.5-3z" fill="currentColor"/>
-                <rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              </svg>
-              <span>TypeScript</span>
-            </div>
-            <div class="stack-card">
-              <!-- Tailwind SVG -->
-              <svg class="stack-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 6C9.6 6 8.1 7.2 7.5 9.6c.9-1.2 1.95-1.65 3.15-1.35.685.171 1.174.667 1.716 1.218C13.323 10.48 14.4 11.6 16.5 11.6c2.4 0 3.9-1.2 4.5-3.6-.9 1.2-1.95 1.65-3.15 1.35-.685-.171-1.174-.667-1.716-1.218C15.177 7.12 14.1 6 12 6zM7.5 11.6C5.1 11.6 3.6 12.8 3 15.2c.9-1.2 1.95-1.65 3.15-1.35.685.171 1.174.667 1.716 1.218C8.823 16.08 9.9 17.2 12 17.2c2.4 0 3.9-1.2 4.5-3.6-.9 1.2-1.95 1.65-3.15 1.35-.685-.171-1.174-.667-1.716-1.218C10.677 12.72 9.6 11.6 7.5 11.6z" fill="currentColor"/>
-              </svg>
-              <span>Tailwind</span>
-            </div>
-          </div>
+        <p class="stacks-label">ferramentas que utilizo</p>
+        <div class="stacks-pills">
+          <span>HTML5</span>
+          <span>CSS</span>
+          <span>MySQL</span>
+          <span>Node.js</span>
+          <span>Docker</span>
+          <span>Render</span>
+          <span>Railway</span>
         </div>
+      </div>
+    </section>
 
-        <!-- Backend -->
-        <div class="stack-category">
-          <h3 class="category-label">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="3" width="20" height="14" rx="2"/>
-              <line x1="8" y1="21" x2="16" y2="21"/>
-              <line x1="12" y1="17" x2="12" y2="21"/>
-            </svg>
-            Backend
-          </h3>
-          <div class="stack-grid">
-            <div class="stack-card">
-              <!-- Node.js -->
-              <svg class="stack-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2L3 7v10l9 5 9-5V7L12 2z" stroke="currentColor" stroke-width="1.5" fill="none"/>
-                <path d="M12 7v10M3 7l9 5 9-5" stroke="currentColor" stroke-width="1.5"/>
-              </svg>
-              <span>Node.js</span>
-            </div>
-            <div class="stack-card">
-              <!-- Python -->
-              <svg class="stack-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2c-2.2 0-4 .8-4 3v2h4v1H6c-2.2 0-4 1.8-4 4s1.8 4 4 4h1v-2H6c-1.1 0-2-.9-2-2s.9-2 2-2h6c2.2 0 4-.8 4-3V5c0-2.2-1.8-3-4-3zm-1 2.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1z" fill="currentColor" opacity="0.8"/>
-                <path d="M18 10h-1v2h1c1.1 0 2 .9 2 2s-.9 2-2 2h-6c-2.2 0-4 .8-4 3v2c0 2.2 1.8 3 4 3s4-.8 4-3v-2h-4v-1h6c2.2 0 4-1.8 4-4s-1.8-4-4-4zm-5 9.5a.5.5 0 1 1 0 1 .5.5 0 0 1 0-1z" fill="currentColor" opacity="0.8"/>
-              </svg>
-              <span>Python</span>
-            </div>
-            <div class="stack-card">
-              <!-- REST API -->
-              <svg class="stack-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M3 12h18M12 3c-2.5 3-4 5.7-4 9s1.5 6 4 9M12 3c2.5 3 4 5.7 4 9s-1.5 6-4 9" stroke="currentColor" stroke-width="1.5"/>
-              </svg>
-              <span>REST API</span>
-            </div>
-            <div class="stack-card">
-              <!-- Express -->
-              <svg class="stack-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <text x="2" y="17" font-size="14" font-family="Arial" font-weight="bold" fill="currentColor">Ex</text>
-              </svg>
-              <span>Express</span>
-            </div>
-          </div>
-        </div>
+    <!-- ===================== PLANOS ===================== -->
+    <section id="planos" class="section-planos reveal">
+      <div class="container">
+        <h2 class="section-title">Escolha seu <span class="accent">Plano</span></h2>
+        <p class="section-sub">Escolha o plano ideal e tenha um site profissional que gera resultados</p>
 
-        <!-- Banco de Dados -->
-        <div class="stack-category">
-          <h3 class="category-label">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <ellipse cx="12" cy="5" rx="9" ry="3"/>
-              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
-              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
-            </svg>
-            Banco de Dados
-          </h3>
-          <div class="stack-grid">
-            <div class="stack-card">
-              <svg class="stack-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="12" cy="6" rx="8" ry="3" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M4 6v5c0 1.657 3.582 3 8 3s8-1.343 8-3V6" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M4 11v5c0 1.657 3.582 3 8 3s8-1.343 8-3v-5" stroke="currentColor" stroke-width="1.5"/>
-              </svg>
-              <span>PostgreSQL</span>
-            </div>
-            <div class="stack-card">
-              <svg class="stack-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="2"/>
-              </svg>
-              <span>MongoDB</span>
-            </div>
-            <div class="stack-card">
-              <svg class="stack-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M9 9h6v6H9zM3 9h6M15 9h6M3 15h6M15 15h6M9 3v6M9 15v6M15 3v6M15 15v6" stroke="currentColor" stroke-width="1.2"/>
-              </svg>
-              <span>MySQL</span>
-            </div>
-            <div class="stack-card">
-              <svg class="stack-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 5h16M4 12h16M4 19h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <circle cx="4" cy="5" r="1.5" fill="currentColor"/>
-                <circle cx="4" cy="12" r="1.5" fill="currentColor"/>
-                <circle cx="4" cy="19" r="1.5" fill="currentColor"/>
-              </svg>
-              <span>Redis</span>
-            </div>
-          </div>
-        </div>
+        <div class="planos-grid">
 
-        <!-- DevOps -->
-        <div class="stack-category">
-          <h3 class="category-label">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="8" rx="2"/>
-              <rect x="2" y="14" width="20" height="8" rx="2"/>
-              <line x1="6" y1="6" x2="6.01" y2="6"/>
-              <line x1="6" y1="18" x2="6.01" y2="18"/>
-            </svg>
-            DevOps
-          </h3>
-          <div class="stack-grid">
-            <div class="stack-card">
-              <svg class="stack-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22 12.5C22 12.5 19.5 15 16 15c-2 0-3.5-1-5-1s-3 1-5 1c-3.5 0-3-2.5-3-2.5s.5-3 3-3c1.5 0 3 1 5 1s3-1 5-1c3.5 0 6 2.5 6 3z" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M9 15v3c0 1 .5 3 3 3s3-2 3-3v-3" stroke="currentColor" stroke-width="1.5"/>
-              </svg>
-              <span>Docker</span>
+          <!-- Plano 1 -->
+          <div class="plano-card">
+            <div class="plano-header">
+              <span class="plano-tag">Essencial</span>
+              <h3 class="plano-name">Landing Page</h3>
+              <p class="plano-desc">Ideal para divulgar serviços, produtos ou lançamentos com uma página linda e direta ao ponto.</p>
             </div>
-            <div class="stack-card">
-              <svg class="stack-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" stroke="currentColor" stroke-width="1.2"/>
-              </svg>
-              <span>Git</span>
-            </div>
-            <div class="stack-card">
-              <svg class="stack-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
-                <rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
-                <rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
-                <rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
-              </svg>
-              <span>CI/CD</span>
-            </div>
-            <div class="stack-card">
-              <svg class="stack-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="1.5"/>
-                <polyline points="9 22 9 12 15 12 15 22" stroke="currentColor" stroke-width="1.5"/>
-              </svg>
-              <span>AWS</span>
-            </div>
+            <ul class="plano-features">
+              <li>1 página completa</li>
+              <li>Design responsivo (mobile)</li>
+              <li>Botão de WhatsApp</li>
+              <li>Até 6 seções</li>
+              <li>Entrega em 5 dias úteis</li>
+            </ul>
+            <a href="#contato" class="btn btn-ghost plano-cta">Quero esse</a>
           </div>
-        </div>
+
+          <!-- Plano 2 — Destaque -->
+          <div class="plano-card plano-destaque">
+            <span class="plano-badge">Mais escolhido</span>
+            <div class="plano-header">
+              <span class="plano-tag">Profissional</span>
+              <h3 class="plano-name">Site Completo</h3>
+              <p class="plano-desc">Para quem quer presença digital de verdade — várias páginas, identidade visual e muito cuidado.</p>
+            </div>
+            <ul class="plano-features">
+              <li>Até 5 páginas</li>
+              <li>Design responsivo (mobile)</li>
+              <li>Formulário de contato</li>
+              <li>SEO básico</li>
+              <li>Integração com redes sociais</li>
+              <li>Entrega em 10 dias úteis</li>
+            </ul>
+            <a href="#contato" class="btn btn-primary plano-cta">Quero esse</a>
+          </div>
+
+          <!-- Plano 3 -->
+          <div class="plano-card">
+            <div class="plano-header">
+              <span class="plano-tag">Premium</span>
+              <h3 class="plano-name">Site + Loja</h3>
+              <p class="plano-desc">E-commerce completo para vender seus produtos online com facilidade e elegância.</p>
+            </div>
+            <ul class="plano-features">
+              <li>Tudo do Plano Profissional</li>
+              <li>Loja online</li>
+              <li>Painel de produtos</li>
+              <li>Integração com pagamentos</li>
+              <li>Suporte por 30 dias</li>
+              <li>Entrega em 20 dias úteis</li>
+            </ul>
+            <a href="#contato" class="btn btn-ghost plano-cta">Quero esse</a>
+          </div>
 
       </div>
     </section>
@@ -347,135 +218,36 @@
     <section id="projetos" class="section-projetos reveal">
       <div class="container">
         <h2 class="section-title">Meus <span class="accent">Projetos</span></h2>
-        <p class="section-sub">Alguns dos trabalhos que fiz com carinho</p>
-
-        <!-- Filtros -->
-        <div class="filter-bar" id="filterBar">
-          <button class="filter-btn active" data-filter="todos">Todos</button>
-          <button class="filter-btn" data-filter="frontend">Frontend</button>
-          <button class="filter-btn" data-filter="backend">Backend</button>
-          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
-        </div>
+        <p class="section-sub">Projetos reais entregues para clientes</p>
 
         <!-- Grid de projetos -->
-        <div class="projects-grid" id="projectsGrid">
+        <div class="projects-grid projects-grid--single" id="projectsGrid">
 
-          <!-- PROJETO 1 — SUBSTITUIR com dados reais -->
-          <article class="project-card" data-category="fullstack">
+          <!-- morenaraiz.com -->
+          <article class="project-card">
             <div class="project-card-inner">
-              <div class="project-thumb">
-                <div class="project-thumb-bg" style="--hue: 185"></div>
-                <div class="project-thumb-code">
-                  <span>&lt;/&gt;</span>
-                </div>
+              <div class="project-thumb project-thumb--logo">
+                <img src="morenaraiz-logo.png" alt="Morena Raiz logo" class="project-logo-img" />
               </div>
               <div class="project-info">
                 <div class="project-stack-badges">
-                  <span class="badge">React</span>
-                  <span class="badge">Node.js</span>
-                  <span class="badge">PostgreSQL</span>
+                  <span class="badge">Vestuário</span>
+                  <span class="badge">Profissional</span>
                 </div>
-                <h3 class="project-name">E-commerce Platform</h3>
+                <h3 class="project-name">morenaraiz.com</h3>
                 <p class="project-desc">
-                  Plataforma de vendas online com painel administrativo, carrinho de compras,
-                  integração com pagamentos e dashboard de analytics em tempo real.
-                  <!-- SUBSTITUIR: descrição real do projeto -->
+                  Site criado para a marca Morena Raiz — moda feminina com identidade visual
+                  autêntica, pensado para converter visitas em vendas.
                 </p>
                 <div class="project-actions">
-                  <!-- SUBSTITUIR: link GitHub real -->
-                  <a href="#" class="project-link" target="_blank" rel="noopener" title="Ver código">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
-                    </svg>
-                    GitHub
-                  </a>
-                  <!-- SUBSTITUIR: link deploy real -->
-                  <a href="#" class="project-link project-link-demo" target="_blank" rel="noopener" title="Ver demo">
+                  <a href="https://morenaraiz.com" class="project-link project-link-demo" target="_blank" rel="noopener">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                       <polyline points="15 3 21 3 21 9"/>
                       <line x1="10" y1="14" x2="21" y2="3"/>
                     </svg>
-                    Demo
-                  </a>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJETO 2 — SUBSTITUIR com dados reais -->
-          <article class="project-card" data-category="backend">
-            <div class="project-card-inner">
-              <div class="project-thumb">
-                <div class="project-thumb-bg" style="--hue: 270"></div>
-                <div class="project-thumb-code">
-                  <span>{ }</span>
-                </div>
-              </div>
-              <div class="project-info">
-                <div class="project-stack-badges">
-                  <span class="badge">Node.js</span>
-                  <span class="badge">Docker</span>
-                  <span class="badge">Redis</span>
-                </div>
-                <h3 class="project-name">API de Autenticação</h3>
-                <p class="project-desc">
-                  Serviço de autenticação JWT com refresh tokens, controle de sessões,
-                  rate limiting e logs estruturados. Containerizado com Docker.
-                  <!-- SUBSTITUIR: descrição real do projeto -->
-                </p>
-                <div class="project-actions">
-                  <a href="#" class="project-link" target="_blank" rel="noopener">
-                    <!-- SUBSTITUIR: link GitHub real -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
-                    </svg>
-                    GitHub
-                  </a>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJETO 3 — SUBSTITUIR com dados reais -->
-          <article class="project-card" data-category="frontend">
-            <div class="project-card-inner">
-              <div class="project-thumb">
-                <div class="project-thumb-bg" style="--hue: 140"></div>
-                <div class="project-thumb-code">
-                  <span>UI</span>
-                </div>
-              </div>
-              <div class="project-info">
-                <div class="project-stack-badges">
-                  <span class="badge">React</span>
-                  <span class="badge">TypeScript</span>
-                  <span class="badge">Tailwind</span>
-                </div>
-                <h3 class="project-name">Design System</h3>
-                <p class="project-desc">
-                  Biblioteca de componentes reutilizáveis com Storybook, temas configuráveis,
-                  acessibilidade WCAG 2.1 e documentação interativa.
-                  <!-- SUBSTITUIR: descrição real do projeto -->
-                </p>
-                <div class="project-actions">
-                  <a href="#" class="project-link" target="_blank" rel="noopener">
-                    <!-- SUBSTITUIR: link GitHub real -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
-                    </svg>
-                    GitHub
-                  </a>
-                  <a href="#" class="project-link project-link-demo" target="_blank" rel="noopener">
-                    <!-- SUBSTITUIR: link deploy real -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                      <polyline points="15 3 21 3 21 9"/>
-                      <line x1="10" y1="14" x2="21" y2="3"/>
-                    </svg>
-                    Demo
+                    Ver site
                   </a>
                 </div>
               </div>
@@ -494,73 +266,28 @@
           Estou disponível para novos projetos, freelas e oportunidades.
         </p>
 
-        <div class="contact-cards">
-
-          <!-- WhatsApp -->
-          <a
-            href="https://wa.me/5548996727239"
-            class="contact-card contact-whatsapp"
-            target="_blank"
-            rel="noopener"
-            aria-label="Contato via WhatsApp"
-          >
-            <div class="contact-icon">
-              <!-- WhatsApp SVG -->
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
-              </svg>
-            </div>
-            <div class="contact-info">
-              <span class="contact-label">WhatsApp</span>
-              <span class="contact-value">(48) 99672-7239</span>
-            </div>
-            <div class="contact-arrow">→</div>
+        <div class="contact-clean">
+          <a href="https://wa.me/5548996727239" class="contact-btn-main" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+            </svg>
+            Falar no WhatsApp
           </a>
 
-          <!-- LinkedIn -->
-          <!-- SUBSTITUIR: URL do LinkedIn -->
-          <a
-            href="#"
-            class="contact-card contact-linkedin"
-            target="_blank"
-            rel="noopener"
-            aria-label="Perfil no LinkedIn"
-          >
-            <div class="contact-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <div class="contact-links-row">
+            <a href="https://www.linkedin.com/in/luacruz" class="contact-link-pill" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
               </svg>
-            </div>
-            <div class="contact-info">
-              <span class="contact-label">LinkedIn</span>
-              <span class="contact-value">linkedin.com/in/luana-cruz</span>
-              <!-- SUBSTITUIR: username real do LinkedIn -->
-            </div>
-            <div class="contact-arrow">→</div>
-          </a>
-
-          <!-- GitHub -->
-          <!-- SUBSTITUIR: URL do GitHub -->
-          <a
-            href="#"
-            class="contact-card contact-github"
-            target="_blank"
-            rel="noopener"
-            aria-label="Perfil no GitHub"
-          >
-            <div class="contact-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              LinkedIn
+            </a>
+            <a href="https://github.com/luanafloriano" class="contact-link-pill" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
               </svg>
-            </div>
-            <div class="contact-info">
-              <span class="contact-label">GitHub</span>
-              <span class="contact-value">github.com/luana-cruz</span>
-              <!-- SUBSTITUIR: username real do GitHub -->
-            </div>
-            <div class="contact-arrow">→</div>
-          </a>
-
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -573,7 +300,7 @@
       <p>
         Feito com
         <span class="accent">♥</span>
-        por <strong>Luana Cruz</strong> · 2025
+        por <strong>Luana Cruz</strong> · 2026
       </p>
       <p class="footer-sub">Full Stack Developer</p>
     </div>

@@ -108,10 +108,10 @@
   if (!el) return;
 
   const phrases = [
-    'Desenvolvedora Full Stack',
-    'Apaixonada por código limpo',
-    'Criadora de experiências digitais',
-    'React · Node.js · PostgreSQL',
+    'Criadora de sites profissionais',
+    'Sites que vendem de verdade',
+    'Design + Tecnologia para o seu negócio',
+    'HTML · Node.js · MySQL · Docker',
   ];
 
   let phraseIdx = 0;
